@@ -1,16 +1,22 @@
 <template>
   <div class="app" id="app">
-    test app
+    <tab-view/>
   </div>
 </template>
 
 <script>
-
+import TabView from './components/TabView.vue'
 export default {
   name: 'App',
+  components:{
+    TabView
+  }
 }
 </script>
-<style scoped>
+<style>
+body{
+  background-color: #919191;
+}
   .app{
       display: flex;
       justify-content: center;
