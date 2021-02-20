@@ -1,15 +1,54 @@
 <template>
   <div class="app" id="app">
-    <tab-view/>
+    <tabs>
+      <tab-item 
+        name="Custom tab 1"
+      >
+        <h2>Some head in custom tab</h2>
+        <input type="text">
+        <button>Save</button>
+      </tab-item>
+
+      <tab-item 
+        name="Custom tab 2"
+      >
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nesciunt est consequuntur aperiam magnam voluptate optio? In ipsa molestias debitis? Ex vero in exercitationem repudiandae error enim nulla possimus expedita!</div>
+      </tab-item>
+
+      <tab-item 
+        name="Custom tab 3"
+      >
+        <h3>Some head 3</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>Save</button>
+      </tab-item>
+
+      <tab-item 
+        name="Custom tab 4"
+      >
+        <h3>Some head </h3>
+        <button>Save</button>
+      </tab-item>
+
+      <tab-item 
+        name="Custom tab 5"
+      >
+        <h3>Some head 5</h3>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button>Save</button>
+      </tab-item>
+    </tabs>
   </div>
 </template>
 
 <script>
-import TabView from './components/TabView.vue'
+import Tabs from './components/Tabs.vue'
+import TabItem from './components/TabItem.vue'
 export default {
   name: 'App',
   components:{
-    TabView
+    Tabs,
+    TabItem
   }
 }
 </script>
