@@ -1,9 +1,11 @@
 <template>
   <div class="app" id="app">
     <tabs>
+       <!-- tab component get name as attribute -->
       <tab-item 
         name="Custom tab 1"
       >
+      <!-- tab component get content in tag tab-item -->
         <h2>Some head in custom tab</h2>
         <input type="text">
         <button>Save</button>
@@ -27,14 +29,6 @@
         name="Custom tab 4"
       >
         <h3>Some head </h3>
-        <button>Save</button>
-      </tab-item>
-
-      <tab-item 
-        name="Custom tab 5"
-      >
-        <h3>Some head 5</h3>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
         <button>Save</button>
       </tab-item>
     </tabs>
