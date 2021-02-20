@@ -12,7 +12,6 @@
                   {{tab.name}}  
                </div>
             </div>
-            <div class="tab__add">+</div>
         </div>
         <div class="tabs__content">
             <slot/>
